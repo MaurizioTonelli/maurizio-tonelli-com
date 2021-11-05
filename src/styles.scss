@@ -3,10 +3,54 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+h1,
+h2,
+h3,
+h4 {
+  @apply font-display;
+}
+
+p,
+span,
+a {
+  @apply font-body;
+}
+.shadowed-button {
+  box-shadow: 15px 15px 0px rgba(240, 165, 0, 0.2);
+  transition: all 0.2s ease-in-out;
+}
+.shadowed-button:hover {
+  transform: translateX(15px) translateY(15px);
+  box-shadow: 0px 0px 0px transparent;
+}
 .container-wrapper {
   @apply px-32;
 }
-
 .container {
   @apply mx-auto max-w-7xl;
+}
+:root {
+  --primary-color-50: #1383d6;
+  --primary-color-100: #247bbd;
+  --primary-color-200: #2f72a3;
+  --primary-color-300: #36668a;
+  --primary-color-400: #375870;
+  --primary-color-500: #334756;
+  --primary-color-600: #2a353d;
+  --primary-color-700: #1c2024;
+  --primary-color-800: #090a0a;
+  --primary-color-900: #080808;
+
+  --secondary-color-50: #f0d290;
+  --secondary-color-100: #f0cb78;
+  --secondary-color-200: #f0c360;
+  --secondary-color-300: #f0bb48;
+  --secondary-color-400: #f0b430;
+  --secondary-color-500: #f0a500;
+  --secondary-color-600: #d69300;
+  --secondary-color-700: #bd8200;
+  --secondary-color-800: #a37000;
+  --secondary-color-900: #8a5f00;
 }
