@@ -12,7 +12,7 @@ h4 {
   @apply font-display;
 }
 h2 {
-  @apply text-5xl font-semibold;
+  @apply text-3xl md:text-5xl font-semibold;
 }
 h4 {
   @apply font-bold uppercase text-sm;
@@ -45,7 +45,7 @@ a {
   box-shadow: 0px 0px 0px transparent;
 }
 .container-wrapper {
-  @apply px-32;
+  @apply px-6 sm:px-8 md:px-16 lg:px-32 overflow-x-hidden;
 }
 .container {
   @apply mx-auto max-w-7xl;
