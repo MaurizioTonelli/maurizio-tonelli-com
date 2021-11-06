@@ -11,17 +11,33 @@ h3,
 h4 {
   @apply font-display;
 }
+h2 {
+  @apply text-5xl font-semibold;
+}
 
 p,
 span,
 a {
   @apply font-body;
 }
+
+.btn {
+  @apply px-4 py-2 bg-secondary-color text-white rounded-lg font-medium;
+}
 .shadowed-button {
   box-shadow: 15px 15px 0px rgba(240, 165, 0, 0.2);
   transition: all 0.2s ease-in-out;
 }
 .shadowed-button:hover {
+  transform: translateX(15px) translateY(15px);
+  box-shadow: 0px 0px 0px transparent;
+}
+
+.shadowed-container {
+  box-shadow: 15px 15px 0px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease-in-out;
+}
+.shadowed-container:hover {
   transform: translateX(15px) translateY(15px);
   box-shadow: 0px 0px 0px transparent;
 }

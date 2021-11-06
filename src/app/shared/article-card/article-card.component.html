@@ -1,0 +1,17 @@
+<div class="shadowed-container max-w-xs flex-grow rounded-lg overflow-hidden my-5 mx-5">
+    <div class="bg-secondary-color-50 flex flex-col items-center pt-5">
+        <h3 class="font-bold uppercase mb-5">{{title}}</h3>
+        <div class="max-w-sm image-div-container h-40 w-10/12" [ngStyle]="{'background':'url(' + image + ')', 'background-size': 'cover'}">
+
+        </div>
+    </div>
+    <div class="bg-white flex flex-col items-center py-5 px-5">
+        <p class="font-bold ">Por {{author}}</p>
+        <p class="text-primary-color">{{published}}</p>
+        <p class="mt-4"><ng-content></ng-content> ...</p>
+        <div class="flex flex-row flex-wrap items-center justify-center mt-10">
+            <div class="tag" *ngFor="let tag of tags">{{tag}}</div>
+        </div>
+        <button class="btn mt-6">Leer más</button>
+    </div>
+</div>
