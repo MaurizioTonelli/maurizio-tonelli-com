@@ -3,10 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { HeroComponent } from './hero/hero.component';
-import { LastArticlesComponent } from './last-articles/last-articles.component';
+import { NavbarComponent } from './shared/navbar/navbar.component';
+import { HeroComponent } from './home-page/hero/hero.component';
+import { LastArticlesComponent } from './home-page/last-articles/last-articles.component';
 import { ArticleCardComponent } from './shared/article-card/article-card.component';
+import { FooterComponent } from './shared/footer/footer.component';
+import { HomePageComponent } from './home-page/home-page.component';
 
 @NgModule({
   declarations: [
@@ -14,13 +16,12 @@ import { ArticleCardComponent } from './shared/article-card/article-card.compone
     NavbarComponent,
     HeroComponent,
     LastArticlesComponent,
-    ArticleCardComponent
+    ArticleCardComponent,
+    FooterComponent,
+    HomePageComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
