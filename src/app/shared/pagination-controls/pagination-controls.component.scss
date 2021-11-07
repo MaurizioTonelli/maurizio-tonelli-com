@@ -1,6 +1,7 @@
-.selected-page {
-  @apply bg-primary-color;
+.selected-pagination-item {
+  @apply bg-primary-color mr-2 mb-2 text-white font-bold py-4 rounded-lg w-10 h-10 text-center leading-3 cursor-pointer;
 }
-.selected-page:hover {
-  opacity: 1;
+
+.pagination-item {
+  @apply bg-secondary-color mr-2 mb-2 text-white font-bold py-4 rounded-lg w-10 h-10 text-center leading-3 hover:opacity-60 cursor-pointer;
 }
