@@ -2,6 +2,7 @@
   height: 500px;
   background: url("/assets/images/article-content/article-image-3.jpg");
   background-size: cover;
+  background-position: center;
 }
 .article-text p {
   @apply leading-loose text-lg mb-10;
