@@ -9,6 +9,9 @@ import { LastArticlesComponent } from './home-page/last-articles/last-articles.c
 import { ArticleCardComponent } from './shared/article-card/article-card.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { HomePageComponent } from './home-page/home-page.component';
+import { ArticlesPageComponent } from './articles-page/articles-page.component';
+import { ArticlesComponent } from './articles-page/articles/articles.component';
+import { PaginationControlsComponent } from './shared/pagination-controls/pagination-controls.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +22,9 @@ import { HomePageComponent } from './home-page/home-page.component';
     ArticleCardComponent,
     FooterComponent,
     HomePageComponent,
+    ArticlesPageComponent,
+    ArticlesComponent,
+    PaginationControlsComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
