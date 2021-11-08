@@ -13,6 +13,7 @@ import { ArticlesPageComponent } from './articles-page/articles-page.component';
 import { ArticlesComponent } from './articles-page/articles/articles.component';
 import { PaginationControlsComponent } from './shared/pagination-controls/pagination-controls.component';
 import { ArticlePageComponent } from './article-page/article-page.component';
+import { CommentsComponent } from './article-page/comments/comments.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { ArticlePageComponent } from './article-page/article-page.component';
     ArticlesComponent,
     PaginationControlsComponent,
     ArticlePageComponent,
+    CommentsComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
